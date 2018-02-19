@@ -17,7 +17,7 @@ In Xen-based system, basically there is an OS which is granted the privilege as 
 the guest OSes (DomUs). In this post, I will show the steps on how to boot the Xen hypervisor on yur ZCU102 board
 using the Petalinux project. Most of the steps here are based on the [Xilinx wiki page](http://www.wiki.xilinx.com/Building+the+Xen+Hypervisor+with+PetaLinux+2017.3)
 with some modifications from me.
-
+<!--more-->
 ### Build and Boot Dom0
 Before we can boot the guest OSes on Xen, we need to boot the Xen and Dom0 first. I assume
 that you have installed Petalinux on your machine and downloaded the board support package (BSP)
@@ -37,7 +37,6 @@ From the linux config, enable the package
 Filesystem Packages ---> misc ---> packagegroup-petalinux-xen ---> [*] packagegroup-petalinux-xen
 ```
 Save the configuration and exit.
-<!--more-->
 We are going to make use a second partition to contain the rootfs. Configure rootfs to initrd
 ```shell
 $ petalinux-config
