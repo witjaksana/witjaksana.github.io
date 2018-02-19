@@ -1,11 +1,14 @@
 ---
 layout: post
-title: Share ethernet connection to DomU with PV driver
-tags: xilinx xenbridge zynq ultrascale+ network xen paravirtualization
+title: Share ethernet connection to DomU with PV driver on ZCU102
+tags: xilinx xenbridge zynq ultrascale+ network xen paravirtualization zcu102
 eye_catch: #http://jekyllrb.com/img/logo-2x.png
 ---
-When booting a guest OS (DomU), it does not have an internet connection by default.
+When booting a guest OS (DomU) on ZCU102, it does not have an internet connection by default.
 From the Dom0, there exists an available paravirtualization driver for the network.
+The network connection can be shared from Dom0 to guests via xenbridge.
+In this post, I will explain the steps to activate the xenbridge.
+<!--more-->
 Kill the dhcp client for the ethernet interface
 ```shell
 $ killall -9 udhcpc
