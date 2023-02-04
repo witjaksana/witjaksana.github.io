@@ -7,4 +7,4 @@
 
  <p align="justify">This website serves as an online portfolio to showcase my web presence, résumé, story, & featured projects with a Particle.js aligned theme. It was generated using using Jekyll, Sass, and Gulp.js.</p>
 
-<p align="justify">Template provided by [AVS1508](https://github.com/AVS1508/My-Alternate-Portfolio-Website)</p>
+Template provided by [AVS1508](https://github.com/AVS1508/My-Alternate-Portfolio-Website)
